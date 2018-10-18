@@ -1,5 +1,12 @@
 language: php
-php: 
-    - 7.2
-install: 
-    - composer install
+php:
+  - 7.2
+install:
+  - composer install
+deploy:
+  provider: heroku
+  api_key:
+    secure: U1rK91qBUdwYQDpVbplPcEYbQHEnbWHo2foOWRhfg38MN9bUNuC1zGo6CLecJkCZcYoq1qMq50THlSb/U+kngDFgBPNu2r8gVPVQhJZc12ngInD/CWo0fSgW/4aHLOvPKb/sbajfF//areKfszr+hL/0Qhqpo5DI+CuATZ43GSsZIHo+pA5ngOn3DzRhbeuEz69L5iVk5dPniuI/63J0OYpk9eL7Q3yUc6R9BbJnmMqeD0fwGOc9MI3hWV9fxkoTL5KVv4N9fH8AOLzWRDIVHaZ9sA91ZY/aD7d2aa5Yn7G+tOxF7C5NA7fJ9imwxxTiHB+04+DGlXwwNwukLp4Cax7cxHJmoP7s5wkUG7EG8fNNHXc4G12kMGOveFrB4hXX+Y+Ozc72PqywydpT1KpOTTvp34ALr0xd0izZegTxdDR4VZzL1RY21/uZZyWxOiaBo39B+TlgUWjb2Eg8hSooIkhi9YpQIZIUMf7OScb6rbzNoEn9stEqIVw0xVJKTCNi7b1CyR9D8GIar/3jMsdWL32PPvDEkcn8bHy6Zz3gM7my31kIMdNxDaxeJlpVfkArRTgQ1w8iz8s70CNurezh7lJZTaGFnw0TDSq3PCG1pTLjZz7OcPyVdzOBRJVhbOp3PPp3SNnpJ0B0jTS82aYzzrniwCluXGekgibc61ClxDQ=
+  app: esgi-env-col
+  on:
+    repo: tcrepy/esgi-env-col
