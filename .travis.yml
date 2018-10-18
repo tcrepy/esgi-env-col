@@ -3,6 +3,7 @@ php:
   - 7.2
 install:
   - composer install
+  - php bin/console server:run
 deploy:
   provider: heroku
   api_key:
