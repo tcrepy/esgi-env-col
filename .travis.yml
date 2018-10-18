@@ -2,7 +2,6 @@ language: php
 php:
   - 7.2
 install:
-  - echo 'web: $(composer config bin-dir)/heroku-php-apache2 public/' > Procfile
   - composer install
   - php bin/console server:run
 deploy:
